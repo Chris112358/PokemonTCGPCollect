@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pokemon TCGP Collect</string>
+    <string name="dex_title">Pokemon TCGP Collection Dex</string>
+    <string name="dex_descriptor">Dex</string>
+    <string name="set_title">Pokemon TCGP Settings</string>
+    <string name="set_descriptor">Settings</string>
+    <string name="mis_title">Pokemon TCGP Collection Missions</string>
+    <string name="mis_descriptor">Missions</string>
+    <string name="stats_title">Pokemon TCGP Collection Statistics</string>
+    <string name="stats_descriptor">Stats</string>
+    <string name="a1">Unschlagbare Gene</string>
+    <string name="a1a">Mysteriöse Insel</string>
+    <string name="promoa">Promo A</string>
+</resources>

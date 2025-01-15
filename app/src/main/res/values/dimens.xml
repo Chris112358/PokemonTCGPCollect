@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_big">15dp</dimen>
+    <dimen name="font_medium">10dp</dimen>
+    <dimen name="font_small">5dp</dimen>
+</resources>
