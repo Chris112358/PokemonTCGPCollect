@@ -14,7 +14,6 @@ import com.example.pokemontcgpcollect.data.datastore.SettingsRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
@@ -201,7 +200,7 @@ class CollectionViewModel(
             saveStateRepo.saveState(newSave)
             Log.d(TAG, "ID was not yet included, included it now")
         } else {
-            saveStateRepo.updateState(newSave)
+            saveStateRepo.saveState(newSave)
             Log.d(TAG, "ID was already included, updated it now")
         }
 

@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface DexStateDao {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun saveState(item: SaveStateDex)
 
     @Update
@@ -24,5 +24,5 @@ interface DexStateDao {
     fun getAllSaved(): Flow<List<SaveStateDex>>
 
     @Query("SELECT * FROM saveStateDex WHERE cardID = :id LIMIT 1")
-    fun getSavedId(id: Int): Flow<SaveStateDex>?
+    fun getSavedId(id: Int): Flow<SaveStateDex?>?
 }

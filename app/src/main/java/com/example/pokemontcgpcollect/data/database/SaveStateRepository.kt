@@ -20,7 +20,7 @@ class SaveStateRepository(private val dexStateDao: DexStateDao): SaveStateRepo {
         return dexStateDao.getAllSaved()
     }
 
-    override fun getSavedId(id: Int): Flow<SaveStateDex>? {
+    override fun getSavedId(id: Int): Flow<SaveStateDex?>? {
         return dexStateDao.getSavedId(id)
     }
 }

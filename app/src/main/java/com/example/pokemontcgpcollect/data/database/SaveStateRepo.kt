@@ -12,5 +12,5 @@ interface SaveStateRepo {
 
     fun getAllSaved(): Flow<List<SaveStateDex>>
 
-    fun getSavedId(id: Int): Flow<SaveStateDex>?
+    fun getSavedId(id: Int): Flow<SaveStateDex?>?
 }
