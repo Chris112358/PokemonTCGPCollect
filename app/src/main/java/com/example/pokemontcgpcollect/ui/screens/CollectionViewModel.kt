@@ -3,6 +3,7 @@ package com.example.pokemontcgpcollect.ui.screens
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pokemontcgpcollect.data.Dex
 import com.example.pokemontcgpcollect.data.Packs
 import com.example.pokemontcgpcollect.data.database.SaveStateRepo
@@ -14,6 +15,8 @@ import com.example.pokemontcgpcollect.data.datastore.SettingsRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.WhileSubscribed
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
@@ -32,13 +35,22 @@ class CollectionViewModel(
    // val uiState: StateFlow<DexUiState> = _uiState.asStateFlow()
 
     val uiState: StateFlow<DexUiState> =
-        settingsRepo.dexWidthSetting.map { numWidth ->
-            _uiState.value.copy(dexColumns = numWidth)
+        combine(_uiState, settingsRepo.dexWidthSetting) {uiState, dexColumns ->
+            uiState.copy(dexColumns = dexColumns)
         }.stateIn(
             scope = viewModelScope,
-            started = SharingStarted.WhileSubscribed(5_000),
-            initialValue = DexUiState(),
+            started = SharingStarted.WhileSubscribed(1),
+            initialValue = DexUiState()
         )
+
+//    val uiState: StateFlow<DexUiState> =
+//        settingsRepo.dexWidthSetting.map { numWidth ->
+//            _uiState.value.copy(dexColumns = numWidth)
+//        }.stateIn(
+//            scope = viewModelScope,
+//            started = SharingStarted.WhileSubscribed(5_000),
+//            initialValue = DexUiState(),
+//        )
 
     private fun load() {
 
@@ -131,7 +143,7 @@ class CollectionViewModel(
         packEntry.totalDiamond = totalDiamonds
         packEntry.collectedStar = collectedStars
         packEntry.collectedDiamond = collectedDiamonds
-
+        Log.d(TAG, "Calculated rarity")
         return packEntry
         }
 

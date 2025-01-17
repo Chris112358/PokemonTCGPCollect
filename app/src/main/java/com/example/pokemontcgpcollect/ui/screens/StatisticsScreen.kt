@@ -27,11 +27,12 @@ import com.example.pokemontcgpcollect.ui.theme.SuitDiamond
 @Composable
 fun StatisticsScreen(
     dexUiState: DexUiState,
+    viewModel: CollectionViewModel,
     modifier: Modifier = Modifier,
 ) {
-
+    val uiState by viewModel.uiState.collectAsState()
     LazyColumn(modifier = modifier) {
-        items(dexUiState.packs) { pack ->
+        items(uiState.packs) { pack ->
             PackStatistics(pack)
         }
     }
@@ -69,7 +70,6 @@ fun PackStatistics(
             )
         }
     }
-
 }
 
 @Preview
@@ -79,6 +79,6 @@ fun StatsPreview () {
         val viewModel: CollectionViewModel = viewModel()
         val uiState by viewModel.uiState.collectAsState()
         // PackStatistics(packIndex = 0)
-        StatisticsScreen(dexUiState = uiState)
+        StatisticsScreen(dexUiState = uiState, viewModel=viewModel)
     }
 }

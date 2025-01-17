@@ -194,7 +194,8 @@ fun Navigator(
         }
         composable(route = AppMenu.Statistics.name) {
             StatisticsScreen(
-                dexUiState = uiState
+                dexUiState = uiState,
+                viewModel = viewModel
             )
         }
     }
