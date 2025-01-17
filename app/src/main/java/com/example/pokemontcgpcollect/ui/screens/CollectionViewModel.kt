@@ -3,7 +3,6 @@ package com.example.pokemontcgpcollect.ui.screens
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pokemontcgpcollect.data.Dex
 import com.example.pokemontcgpcollect.data.Packs
 import com.example.pokemontcgpcollect.data.database.SaveStateRepo
@@ -15,14 +14,10 @@ import com.example.pokemontcgpcollect.data.datastore.SettingsRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.WhileSubscribed
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.first
-import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 
 
 private const val TAG: String = "DexScreenViewModel"
@@ -32,7 +27,6 @@ class CollectionViewModel(
     private val settingsRepo: SettingsRepository
 ): ViewModel() {
     private val _uiState = MutableStateFlow((DexUiState()))
-   // val uiState: StateFlow<DexUiState> = _uiState.asStateFlow()
 
     val uiState: StateFlow<DexUiState> =
         combine(_uiState, settingsRepo.dexWidthSetting) {uiState, dexColumns ->
@@ -43,26 +37,7 @@ class CollectionViewModel(
             initialValue = DexUiState()
         )
 
-//    val uiState: StateFlow<DexUiState> =
-//        settingsRepo.dexWidthSetting.map { numWidth ->
-//            _uiState.value.copy(dexColumns = numWidth)
-//        }.stateIn(
-//            scope = viewModelScope,
-//            started = SharingStarted.WhileSubscribed(5_000),
-//            initialValue = DexUiState(),
-//        )
-
     private fun load() {
-
-        runBlocking {
-            Log.d(TAG, "Start Settings load")
-            val settingDexWidth = settingsRepo.dexWidthSetting.first()
-            _uiState.update { currentState ->
-                currentState.copy( dexColumns = settingDexWidth)
-            }
-            _uiState.value = _uiState.value.copy(dexColumns = settingDexWidth)
-            Log.d(TAG, "Finished Settings load")
-        }
 
         Log.d(TAG, "Started loading")
         viewModelScope.launch {
@@ -74,7 +49,9 @@ class CollectionViewModel(
                     val updatedDex = Dex().loadDex()
                         .map { dexEntry: DexEntry ->
                             dbSavedMap[dexEntry.cardId]?.let { dbCard ->
-                                dexEntry.copy(numberPossession = dbCard.inPossession)
+                                dexEntry.copy(
+                                    numberPossession = dbCard.inPossession,
+                                    isActive = dbCard.inPossession > 0)
                             } ?: dexEntry
                         }
                     _uiState.value = DexUiState(
@@ -83,14 +60,6 @@ class CollectionViewModel(
                         dexColumns = 3,
                     )
 
-                    val newDexList : MutableList<DexEntry> = mutableListOf()
-                    for (dexEntry in _uiState.value.dex) {
-                        //Log.d(TAG, "Starting searching Dex")
-                        newDexList.add(
-                            checkActive(dexEntry = dexEntry)
-                        )
-                    }
-
                     val newPackList: MutableList<PackEntry> = mutableListOf()
                     for (packEntry in _uiState.value.packs) {
                         newPackList.add(
@@ -98,7 +67,9 @@ class CollectionViewModel(
                         )
                     }
                     _uiState.update { currentState ->
-                        currentState.copy(packs = newPackList, dex = newDexList)
+                        currentState.copy(
+                            packs = newPackList,
+                        )
                     }
                 }
         }
