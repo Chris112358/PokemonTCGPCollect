@@ -37,9 +37,6 @@ fun PackStatistics(
     pack: PackEntry,
     modifier: Modifier = Modifier,
 ) {
-    val diamond:String = pack.collectedDiamond.toString() + "/" + pack.totalDiamond.toString()
-    val star:String = pack.collectedStar.toString() + "/" + pack.totalStar.toString()
-
     Column {
         Text(stringResource(pack.packId))
         Row {
@@ -48,7 +45,6 @@ fun PackStatistics(
                 packEntry = pack,
                 modifier = modifier,
                 )
-
         }
     }
 }

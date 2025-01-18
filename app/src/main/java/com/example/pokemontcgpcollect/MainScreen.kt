@@ -171,7 +171,7 @@ fun Navigator(
     viewModel: CollectionViewModel,
     modifier: Modifier = Modifier
 ) {
-    val uiState by viewModel.uiState.collectAsState()
+    //val uiState by viewModel.uiState.collectAsState()
 
     NavHost(
         navController = navController,

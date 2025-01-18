@@ -21,11 +21,8 @@ import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -58,7 +55,6 @@ import com.example.pokemontcgpcollect.data.datamodel.DexEntry
 import com.example.pokemontcgpcollect.data.datamodel.PackEntry
 import com.example.pokemontcgpcollect.ui.AppViewModelProvider
 import com.example.pokemontcgpcollect.ui.theme.PokemonTCGPCollectTheme
-import com.example.pokemontcgpcollect.ui.theme.SuitDiamond
 import kotlinx.coroutines.launch
 import java.util.Locale
 
@@ -179,8 +175,6 @@ fun DexCard(
 
 @Composable
 fun PackList(
-    //packs : List<PackWithDex>,
-    //numCols: Int = 3,
     viewModel: CollectionViewModel,
     //uiState: DexUiState,
     modifier: Modifier = Modifier
