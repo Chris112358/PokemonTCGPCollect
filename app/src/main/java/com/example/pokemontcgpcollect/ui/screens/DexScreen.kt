@@ -258,21 +258,9 @@ fun DexTitle(
             modifier = modifier,
         )
         Spacer(modifier = modifier.weight(1f))
-        Icon(
-            imageVector = SuitDiamond,
-            contentDescription = null,
-            modifier.padding(end = 3.dp, top = 4.dp)
-        )
-        Text(
-            text = diamond,
-        )
-        Icon(
-            imageVector = Icons.Default.Star,
-            contentDescription = null,
-            modifier.padding(start = 10.dp, end = 3.dp)
-        )
-        Text(
-            text = star,
+        CollectedRarityText(
+            packEntry = pack,
+            modifier = modifier,
         )
     }
 }
