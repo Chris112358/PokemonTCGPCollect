@@ -1,5 +1,6 @@
 package com.example.pokemontcgpcollect
 
+import android.util.Log
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -36,6 +37,8 @@ import com.example.pokemontcgpcollect.ui.theme.Playing_cards
 import com.example.pokemontcgpcollect.ui.theme.PokemonTCGPCollectTheme
 import com.example.pokemontcgpcollect.ui.theme.Query_stats
 
+private const val TAG: String = "MainScreenLog"
+
 @Composable
 fun MainScreen(
     modifier: Modifier = Modifier,
@@ -48,6 +51,7 @@ fun MainScreen(
     val currentScreen = AppMenu.valueOf(
         backStackEntry?.destination?.route ?: AppMenu.Dex.name
     )
+    Log.d(TAG, backStackEntry.toString())
     Scaffold(
         topBar = {
             AppTopBar(
@@ -129,8 +133,9 @@ fun AppMenuBar(
         AppMenu.Settings,
     )
     NavigationBar {
-        val navBackStackEntry by navController.currentBackStackEntryAsState()
-        val currentRoute = navBackStackEntry?.destination?.route
+//        val navBackStackEntry by navController.currentBackStackEntryAsState()
+//        val currentRoute = navBackStackEntry?.destination?.route
+//        Log.d(TAG, currentRoute ?: "Route is Null")
         items.forEach { item ->
             NavigationBarItem(
                 icon = {
