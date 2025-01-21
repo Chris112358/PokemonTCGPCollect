@@ -27,12 +27,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
 import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.ColorFilter
@@ -49,13 +46,13 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.pokemontcgpcollect.R
+import com.example.pokemontcgpcollect.data.Dex
+import com.example.pokemontcgpcollect.data.Packs
 import com.example.pokemontcgpcollect.data.datamodel.DexEntry
+import com.example.pokemontcgpcollect.data.datamodel.DexUiState
 import com.example.pokemontcgpcollect.data.datamodel.PackEntry
-import com.example.pokemontcgpcollect.ui.AppViewModelProvider
 import com.example.pokemontcgpcollect.ui.theme.PokemonTCGPCollectTheme
-import kotlinx.coroutines.launch
 import java.util.Locale
 
 
@@ -63,14 +60,12 @@ private const val TAG: String = "DexScreenLog"
 
 @Composable
 fun DexScreen(
-    //dexUiState: DexUiState,
-    viewModel: CollectionViewModel = viewModel(),
+    uiState: DexUiState,
+    onToggleClick: (Int) -> Unit,
     modifier : Modifier = Modifier,
     it: PaddingValues = PaddingValues(),
 ){
     val layoutDirection = LocalLayoutDirection.current
-    //val uiState = remember { mutableStateOf(dexUiState) }
-    val uiState by viewModel.uiState.collectAsState()
     Surface(
         modifier = modifier
             .fillMaxSize()
@@ -86,10 +81,8 @@ fun DexScreen(
             )
     ) {
         PackList(
-            //packs = uiState.totalDex,
-            viewModel = viewModel,
-            //numCols = uiState.dexWidthNumber,
-            //uiState = uiState,
+            uiState = uiState,
+            onToggleClick = onToggleClick
         )
     }
 }
@@ -175,13 +168,10 @@ fun DexCard(
 
 @Composable
 fun PackList(
-    viewModel: CollectionViewModel,
-    //uiState: DexUiState,
+    uiState: DexUiState,
+    onToggleClick: (Int) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val coroutineScope = rememberCoroutineScope()
-
-    val uiState by viewModel.uiState.collectAsState()
     val numCols = uiState.dexColumns
     val packs = uiState.packs
     val dex = uiState.dex
@@ -215,14 +205,9 @@ fun PackList(
                 DexCard(
                     dexEntry = dexEntry,
                     numCols = numCols,
-                    //isActiveState = dexEntry.isActive,
                     onClick = {
-                        //active = !active
                         Log.d(TAG, "calling ViewModel toggle")
-                        viewModel.toggleEntry(cardId = dexEntry.cardId)
-                        coroutineScope.launch {
-                            viewModel.saveCard(cardId = dexEntry.cardId)
-                        }
+                        onToggleClick(dexEntry.cardId)
                     },
                     modifier = modifier,
                     packId = pack.id,
@@ -237,14 +222,6 @@ fun DexTitle(
     pack: PackEntry,
     modifier: Modifier = Modifier
 ) {
-
-    val diamond = (pack.collectedDiamond.toString()
-            + "/"
-            + pack.totalDiamond.toString())
-
-    val star = (pack.collectedStar.toString()
-            + "/"
-            + pack.totalStar.toString())
     Row {
         Text(
             text = LocalContext.current.getString(pack.packId),
@@ -264,11 +241,13 @@ fun DexTitle(
 @Composable
 fun DexPreview() {
     PokemonTCGPCollectTheme (darkTheme = true){
-        val viewModel: CollectionViewModel = viewModel(factory = AppViewModelProvider.Factory)
-        val uiState by viewModel.uiState.collectAsState()
         DexScreen(
-            //dexUiState = uiState,
-            viewModel = viewModel,
+            uiState = DexUiState(
+                packs = Packs().loadPacks().toMutableList(),
+                dex = Dex().loadDex().toMutableList(),
+                dexColumns = 3
+            ),
+            onToggleClick = {},
             it = PaddingValues(all = 0.dp)
         )
     }

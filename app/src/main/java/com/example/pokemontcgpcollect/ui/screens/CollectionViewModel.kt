@@ -152,6 +152,10 @@ class CollectionViewModel(
             currentState.copy(packs = newPacks)
         }
 
+        viewModelScope.launch {
+            saveCard(cardId = cardId)
+        }
+
     }
 
     fun updateDexWidth(newWidth: Int) {

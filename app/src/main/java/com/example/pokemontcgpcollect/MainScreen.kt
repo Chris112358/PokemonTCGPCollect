@@ -171,7 +171,7 @@ fun Navigator(
     viewModel: CollectionViewModel,
     modifier: Modifier = Modifier
 ) {
-    //val uiState by viewModel.uiState.collectAsState()
+    val uiState by viewModel.uiState.collectAsState()
 
     NavHost(
         navController = navController,
@@ -180,13 +180,14 @@ fun Navigator(
     ){
         composable(route = AppMenu.Dex.name) {
             DexScreen(
-                //dexUiState = uiState,
-                viewModel = viewModel,
+                uiState = uiState,
+                onToggleClick = {item -> viewModel.toggleEntry(cardId = item)}
             )
         }
         composable(route = AppMenu.Settings.name) {
             SettingsScreen(
-                viewModel = viewModel,
+                uiState = uiState,
+                onDexWidthClick = {item -> viewModel.updateDexWidth(item)} ,
             )
         }
         composable(route = AppMenu.Missions.name) {
@@ -194,7 +195,7 @@ fun Navigator(
         }
         composable(route = AppMenu.Statistics.name) {
             StatisticsScreen(
-                viewModel = viewModel
+                uiState = uiState,
             )
         }
     }

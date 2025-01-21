@@ -7,22 +7,21 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.pokemontcgpcollect.data.Dex
+import com.example.pokemontcgpcollect.data.Packs
+import com.example.pokemontcgpcollect.data.datamodel.DexUiState
 import com.example.pokemontcgpcollect.data.datamodel.PackEntry
 import com.example.pokemontcgpcollect.ui.theme.PokemonTCGPCollectTheme
 
 
 @Composable
 fun StatisticsScreen(
-    viewModel: CollectionViewModel,
+    uiState: DexUiState,
     modifier: Modifier = Modifier,
 ) {
-    val uiState by viewModel.uiState.collectAsState()
     LazyColumn(modifier = modifier) {
         items(uiState.packs) { pack ->
             PackStatistics(pack)
@@ -53,9 +52,13 @@ fun PackStatistics(
 @Composable
 fun StatsPreview () {
     PokemonTCGPCollectTheme(darkTheme = false){
-        val viewModel: CollectionViewModel = viewModel()
-        //val uiState by viewModel.uiState.collectAsState()
-        // PackStatistics(packIndex = 0)
-        StatisticsScreen(viewModel=viewModel)
+        StatisticsScreen(
+            uiState = DexUiState(
+                packs = Packs().loadPacks().toMutableList(),
+                dex = Dex().loadDex().toMutableList(),
+                dexColumns = 3
+            ),
+            modifier = Modifier,
+        )
     }
 }
