@@ -12,4 +12,8 @@
     <string name="a1a">Mysteriöse Insel</string>
     <string name="promoa">Promo A</string>
     <string name="dexwidthchoose">Cards per Row</string>
+    <string name="booster_mewtu">Mewtu Pack</string>
+    <string name="booster_charizard">Glurak Pack</string>
+    <string name="booster_pikachu">Pikachu Pack</string>
+    <string name="booster_mew">Mysteriöse Insel Booster</string>
 </resources>

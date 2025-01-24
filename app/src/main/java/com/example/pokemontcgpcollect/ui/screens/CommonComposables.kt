@@ -67,6 +67,7 @@ fun CommonPreview () {
         val packEntry = PackEntry(
             id = 0,
             packId = R.string.a1,
+            booster = listOf(),
             totalDiamond = 100,
             totalStar = 50,
             collectedDiamond = 20,
