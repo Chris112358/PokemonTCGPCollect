@@ -1,7 +1,6 @@
 package com.example.pokemontcgpcollect.data
 
 import android.util.Log
-import androidx.compose.ui.res.stringResource
 import com.example.pokemontcgpcollect.data.datamodel.BoosterEntry
 import com.example.pokemontcgpcollect.data.datamodel.DexEntry
 import kotlin.math.absoluteValue

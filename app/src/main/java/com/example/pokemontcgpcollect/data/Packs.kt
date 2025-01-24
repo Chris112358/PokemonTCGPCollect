@@ -1,7 +1,6 @@
 package com.example.pokemontcgpcollect.data
 
 import com.example.pokemontcgpcollect.R
-import com.example.pokemontcgpcollect.data.Booster
 import com.example.pokemontcgpcollect.data.datamodel.PackEntry
 
 class Packs {
