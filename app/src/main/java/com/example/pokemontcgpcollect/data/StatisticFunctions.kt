@@ -7,8 +7,20 @@ import kotlin.math.absoluteValue
 
 private const val TAG = "StatisticFunctions"
 
-fun calcCompletion(dex: Dex, packId: Int): Float {
-    return 1f
+/**
+ * Returns a Map from Rarities to a List with 2 entries.
+ * First element in List gives the number in possession,
+ * while the second entry gives the total number in the booster
+ */
+fun calcCompletion(dex: List<DexEntry>, packId: Int): Map<Int, List<Int>> {
+    val rarityMap = dex.filter { it.boosterId.contains(packId) }
+        .groupBy { it.rarity }
+        .mapValues { (_, list) ->
+            val countPossession = list.count{ it.numberPossession > 0 }
+            val countTotal = list.size
+            listOf(countPossession, countTotal)
+        }
+    return rarityMap
 }
 
 fun calcNewCardInBooster(dex: List<DexEntry>, boosterEntry: BoosterEntry): Double {

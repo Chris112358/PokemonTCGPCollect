@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -15,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.pokemontcgpcollect.data.Dex
 import com.example.pokemontcgpcollect.data.Packs
+import com.example.pokemontcgpcollect.data.calcCompletion
 import com.example.pokemontcgpcollect.data.calcNewCardInBooster
 import com.example.pokemontcgpcollect.data.datamodel.BoosterEntry
 import com.example.pokemontcgpcollect.data.datamodel.DexEntry
@@ -35,12 +38,15 @@ fun StatisticsScreen(
             contentPadding = PaddingValues(horizontal = 5.dp)
         ) {
             items(uiState.packs) { pack ->
-                PackStatistics(pack, dex = uiState.dex)
+                Card(
+                    elevation = CardDefaults.cardElevation( 4.dp ),
+                    modifier = Modifier,
+                ) {
+                    PackStatistics(pack, dex = uiState.dex)
+                }
             }
         }
-
     }
-
 }
 
 
@@ -66,10 +72,15 @@ fun PackStatistics(
             modifier = modifier.padding(start = 10.dp, end = 5.dp)
         ) {
             for (booster in pack.booster) {
-                CompletenessBooster(
+                NewCardBooster(
                     booster = booster,
                     dex = dex,
                     modifier = modifier
+                )
+                CompletenessBooster(
+                    boosterId = booster.NameId,
+                    dex = dex,
+                    modifier = modifier,
                 )
             }
         }
@@ -80,7 +91,7 @@ fun PackStatistics(
 
 
 @Composable
-fun CompletenessBooster(
+fun NewCardBooster(
     booster: BoosterEntry,
     dex: List<DexEntry>,
     modifier: Modifier = Modifier,
@@ -101,6 +112,48 @@ fun CompletenessBooster(
     }
 
 }
+
+@Composable
+fun CompletenessBooster(
+    boosterId: Int,
+    dex: List<DexEntry>,
+    modifier: Modifier = Modifier,
+) {
+    val boosterCompleteness = calcCompletion(dex = dex, packId = boosterId)
+    Column(
+        modifier = modifier
+    ) {
+        Row {
+            for (rarity in boosterCompleteness.keys.sorted()) {
+                if (rarity < 10) {
+                    Row() {
+                        RarityIcon(rarity = rarity, modifier = modifier)
+                        Text(
+                            text = boosterCompleteness.getValue(rarity)[0].toString()
+                                    + "/"
+                                    + boosterCompleteness.getValue(rarity)[1].toString()
+                        )
+                    }
+                }
+            }
+        }
+        Row{
+            for (rarity in boosterCompleteness.keys.sorted()) {
+                if (rarity >= 10) {
+                    Row() {
+                        RarityIcon(rarity = rarity, modifier = modifier)
+                        Text(
+                            text = boosterCompleteness.getValue(rarity)[0].toString()
+                                    + "/"
+                                    + boosterCompleteness.getValue(rarity)[1].toString()
+                        )
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 
 @Preview
