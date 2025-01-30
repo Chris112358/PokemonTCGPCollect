@@ -168,7 +168,7 @@ class CollectionViewModel(
     }
 
     suspend fun saveCard(cardId: Int){
-
+        // TODO( save cards by string Id not Id to be independent from download )
         val indexCard = _uiState.value.dex.indexOfFirst { it.cardId == cardId }
 
 
