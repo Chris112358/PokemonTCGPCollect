@@ -11,11 +11,16 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.calculateEndPadding
 import androidx.compose.foundation.layout.calculateStartPadding
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.requiredWidth
 import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -113,7 +118,7 @@ fun DexCard(
 
     Card(
         elevation = CardDefaults.cardElevation( 4.dp ),
-        modifier = Modifier,
+        modifier = modifier,
         onClick = {
             active.value = !active.value
             onClick()
@@ -135,8 +140,9 @@ fun DexCard(
                     painter = painterResource(dexEntry.imageResourceId),
                     contentDescription = stringResource(dexEntry.stringResourceID),
                     modifier = Modifier
+                        .fillMaxSize()
                         .clip(RoundedCornerShape(cardCornerRad)),
-                    contentScale = ContentScale.Fit,
+                    contentScale = ContentScale.FillWidth,
                     colorFilter = colorFilter
                 )
             }
@@ -198,8 +204,8 @@ fun PackList(
                 )
             }
             val packDex = dex
-                .filter{ it.packIds.contains(pack.id) }
-                .sortedBy { it.dexNumbers[it.packIds.indexOf(pack.id)] }
+                .filter{ it.packIds.contains(pack.packId) }
+                .sortedBy { it.dexNumbers[it.packIds.indexOf(pack.packId)] }
             items(packDex) { dexEntry ->
 
                 DexCard(
@@ -210,7 +216,7 @@ fun PackList(
                         onToggleClick(dexEntry.cardId)
                     },
                     modifier = modifier,
-                    packId = pack.id,
+                    packId = pack.packId,
                 )
             }
         }

@@ -245,7 +245,7 @@ fun CommonPreview () {
     PokemonTCGPCollectTheme(darkTheme = true){
         val packEntry = PackEntry(
             id = 0,
-            packId = R.string.a1,
+            packId = R.string.pack_A1,
             booster = listOf(),
             totalDiamond = 100,
             totalStar = 50,

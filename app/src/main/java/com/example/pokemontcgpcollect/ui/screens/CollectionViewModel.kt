@@ -94,7 +94,7 @@ class CollectionViewModel(
     }
 
     private fun calcRarity(packEntry: PackEntry): PackEntry {
-        val packId = packEntry.id
+        val packId = packEntry.packId
         var totalDiamonds = 0
         var collectedDiamonds = 0
         var totalStars = 0

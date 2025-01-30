@@ -8,12 +8,15 @@
     <string name="mis_descriptor">Missions</string>
     <string name="stats_title">Pokemon TCGP Collection Statistics</string>
     <string name="stats_descriptor">Stats</string>
-    <string name="a1">Unschlagbare Gene</string>
-    <string name="a1a">Mysteriöse Insel</string>
-    <string name="promoa">Promo A</string>
     <string name="dexwidthchoose">Cards per Row</string>
-    <string name="booster_mewtu">Mewtu Pack</string>
-    <string name="booster_charizard">Glurak Pack</string>
-    <string name="booster_pikachu">Pikachu Pack</string>
-    <string name="booster_mew">Mysteriöse Insel Booster</string>
+    <string name="booster_charizard">Charizard Booster</string>
+    <string name="booster_pikachu">Pikachu Booster</string>
+    <string name="booster_mew">Mew Booster</string>
+    <string name="pack_A1">Genetic Apex</string>
+    <string name="booster_mewtwo">Mewtwo Booster</string>
+    <string name="pack_P_A">Promo A</string>
+    <string name="booster_dialga">Dialga Booster</string>
+    <string name="pack_A2">Space-Time Smackdown</string>
+    <string name="booster_palkia">Booster Palkia</string>
+    <string name="pack_A1a">Mystical Island</string>
 </resources>
