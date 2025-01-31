@@ -13,12 +13,15 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.pokemontcgpcollect.R
 import com.example.pokemontcgpcollect.data.Dex
 import com.example.pokemontcgpcollect.data.Packs
 import com.example.pokemontcgpcollect.data.calcCompletion
 import com.example.pokemontcgpcollect.data.calcNewCardInBooster
+import com.example.pokemontcgpcollect.data.calcTotalCompletion
 import com.example.pokemontcgpcollect.data.datamodel.BoosterEntry
 import com.example.pokemontcgpcollect.data.datamodel.DexEntry
 import com.example.pokemontcgpcollect.data.datamodel.DexUiState
@@ -40,9 +43,12 @@ fun StatisticsScreen(
             items(uiState.packs) { pack ->
                 Card(
                     elevation = CardDefaults.cardElevation( 4.dp ),
-                    modifier = Modifier,
+                    modifier = Modifier.padding(bottom = 6.dp),
                 ) {
-                    PackStatistics(pack, dex = uiState.dex)
+                    PackStatistics(
+                        pack = pack,
+                        dex = uiState.dex,
+                        modifier = modifier)
                 }
             }
         }
@@ -57,10 +63,14 @@ fun PackStatistics(
     modifier: Modifier = Modifier,
 ) {
     Column(
-        modifier = modifier.padding(bottom = 20.dp)
+        modifier = modifier.padding(bottom = 2.dp)
     ) {
-        Text(stringResource(pack.packId))
-        Row {
+        Text(
+            text = stringResource(pack.packId),
+            modifier = modifier.padding(start = 4.dp))
+        Row(
+            modifier = modifier.padding(start = 3.dp, end = 4.dp)
+        ) {
             Spacer(modifier = modifier.weight(1f))
             CollectedRarityText(
                 packEntry = pack,
@@ -71,21 +81,51 @@ fun PackStatistics(
         Column(
             modifier = modifier.padding(start = 10.dp, end = 5.dp)
         ) {
-            for (booster in pack.booster) {
-                NewCardBooster(
+            pack.booster.forEachIndexed{ index, booster ->
+                TitleCompletenessBooster(
                     booster = booster,
                     dex = dex,
-                    modifier = modifier
+                    modifier = modifier.then(
+                        if (index > 0) modifier.padding(top = 13.dp) else modifier.padding(top = 5.dp)
+                    )
                 )
                 CompletenessBooster(
                     boosterId = booster.NameId,
                     dex = dex,
                     modifier = modifier,
                 )
+                NewCardBooster(
+                    booster = booster,
+                    dex = dex,
+                    modifier = modifier
+                )
             }
         }
+    }
+}
 
 
+@Composable
+fun TitleCompletenessBooster(
+    booster: BoosterEntry,
+    dex: List<DexEntry>,
+    modifier: Modifier = Modifier,
+) {
+    Row(
+        modifier = modifier
+    ) {
+        Text(stringResource(booster.NameId))
+        Spacer(Modifier.weight(1.0f))
+        Text(
+            String.format(
+                Locale.getDefault(),
+                "%.1f",
+                calcTotalCompletion(
+                    dex = dex,
+                    boosterId = booster.NameId,
+                )
+            ) + "%"
+        )
     }
 }
 
@@ -97,20 +137,20 @@ fun NewCardBooster(
     modifier: Modifier = Modifier,
 ) {
     Row {
-        Text(stringResource(booster.NameId))
-        Spacer(modifier.weight(1.0f))
+        Text(stringResource(R.string.newCardPercent))
+        //Spacer(modifier.weight(1.0f))
         Text(
-            String.format(
+            text =String.format(
                 Locale.getDefault(),
                 "%.3f",
                 calcNewCardInBooster(
                     dex = dex,
                     boosterEntry = booster,
                 ) 
-            ) + "%"
+            ) + "%",
+            fontWeight = FontWeight.SemiBold
         )
     }
-
 }
 
 @Composable
@@ -119,7 +159,7 @@ fun CompletenessBooster(
     dex: List<DexEntry>,
     modifier: Modifier = Modifier,
 ) {
-    val boosterCompleteness = calcCompletion(dex = dex, packId = boosterId)
+    val boosterCompleteness = calcCompletion(dex = dex, boosterId = boosterId)
     Column(
         modifier = modifier
     ) {

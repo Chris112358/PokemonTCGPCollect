@@ -12,8 +12,8 @@ private const val TAG = "StatisticFunctions"
  * First element in List gives the number in possession,
  * while the second entry gives the total number in the booster
  */
-fun calcCompletion(dex: List<DexEntry>, packId: Int): Map<Int, List<Int>> {
-    val rarityMap = dex.filter { it.boosterId.contains(packId) }
+fun calcCompletion(dex: List<DexEntry>, boosterId: Int): Map<Int, List<Int>> {
+    val rarityMap = dex.filter { it.boosterId.contains(boosterId) }
         .groupBy { it.rarity }
         .mapValues { (_, list) ->
             val countPossession = list.count{ it.numberPossession > 0 }
@@ -22,6 +22,20 @@ fun calcCompletion(dex: List<DexEntry>, packId: Int): Map<Int, List<Int>> {
         }
     return rarityMap
 }
+
+
+fun calcTotalCompletion(dex: List<DexEntry>, boosterId: Int): Double {
+    val rarityMap = calcCompletion(
+        dex = dex,
+        boosterId = boosterId
+    )
+    val sumCollected = rarityMap.values.sumOf { it[0] }
+    val sumTotal = rarityMap.values.sumOf { it[1] }
+    val result = if (sumTotal != 0) 100.0 * sumCollected.toDouble() / sumTotal else 0.0
+
+    return result
+}
+
 
 fun calcNewCardInBooster(dex: List<DexEntry>, boosterEntry: BoosterEntry): Double {
     val newCardProbability = calcProbabilitiesBooster(dex = dex, boosterEntry = boosterEntry)

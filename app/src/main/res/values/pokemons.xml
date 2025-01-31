@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="machop">Machop</string>
     <string name="oddish">Oddish</string>
     <string name="mew">Mew</string>
     <string name="bruxish">Bruxish</string>
@@ -33,7 +32,7 @@
     <string name="torterra">Torterra</string>
     <string name="dedenne">Dedenne</string>
     <string name="dugtrio">Dugtrio</string>
-    <string name="lopunny">Lopunny</string>
+    <string name="lopunny">Palkia Booster</string>
     <string name="elgyem">Elgyem</string>
     <string name="pokemon_communication">Pokemon_Communication</string>
     <string name="gastrodon">Gastrodon</string>
@@ -410,5 +409,5 @@
     <string name="old_amber">Old_Amber</string>
     <string name="seel">Seel</string>
     <string name="magmortar">Magmortar</string>
-
+    <string name="machop">Machop</string>
 </resources>
