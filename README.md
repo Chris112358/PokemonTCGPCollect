@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://Ko-fi.com/chris112358)
+
 # Pokemon TCG Pocket Collection App
 
 The reason for this App is to keep track of your collection in the offical App of Pokemon TCG Pocket.
