@@ -17,11 +17,13 @@
     <string name="booster_dialga">Dialga Booster</string>
     <string name="booster_palkia">Palkia Booster</string>
     <string name="newCardPercent">"Wahrscheinlichkeit neuer Karte: "</string>
+    <string name="unown">Icognito</string>
     <string name="oddish">Myrapla</string>
     <string name="mew">Mew</string>
     <string name="bruxish">Knirfish</string>
     <string name="starmie">Starmie</string>
     <string name="jynx">Rosanna</string>
+    <string name="adaman">Diam</string>
     <string name="mew_ex">Mew EX</string>
     <string name="bidoof">Bidiza</string>
     <string name="riolu">Riolu</string>
@@ -29,6 +31,7 @@
     <string name="cramorant">Urgl</string>
     <string name="lt_surge">Major Bob</string>
     <string name="yanma">Yanma</string>
+    <string name="phione">Phione</string>
     <string name="krabby">Krabby</string>
     <string name="spiritomb">Krypuk</string>
     <string name="hitmonchan">Nockchan</string>
@@ -46,12 +49,14 @@
     <string name="exeggcute">Kokowei</string>
     <string name="darkrai_ex">Darkrai EX</string>
     <string name="porygon">Porygon</string>
+    <string name="houndoom">Hundemon</string>
     <string name="torterra">Chelterra</string>
     <string name="dedenne">Dedenne</string>
     <string name="dugtrio">Digdri</string>
     <string name="lopunny">Schlapor</string>
     <string name="elgyem">Pygraulon</string>
     <string name="pokemon_communication">Pokemon-Kommunikation</string>
+    <string name="arceus">Arceus</string>
     <string name="gastrodon">Gastrodon</string>
     <string name="drifloon">Driftlon</string>
     <string name="zapdos_ex">Zapdos EX</string>
@@ -60,6 +65,7 @@
     <string name="zubat">Zubat</string>
     <string name="chatot">Plaudagei</string>
     <string name="tauros">Tauros</string>
+    <string name="probopass_ex">Voluminas Ex</string>
     <string name="armor_fossil">Panzer Fossil</string>
     <string name="misdreavus">Traunfugil</string>
     <string name="cyrus">Zyrus</string>
@@ -67,6 +73,7 @@
     <string name="frogadier">Amphizel</string>
     <string name="snivy">Serpifeu</string>
     <string name="professors_research">Forschung des Professors</string>
+    <string name="noctowl">Noctuh</string>
     <string name="slurpuff">Sabbaione</string>
     <string name="geodude">kleinstein</string>
     <string name="weavile_ex">Snibunna EX</string>
@@ -87,6 +94,7 @@
     <string name="nidoran_m">Nidoran M</string>
     <string name="darkrai">Darkrai</string>
     <string name="venusaur_ex">Bisaflor EX</string>
+    <string name="froslass">Frosdeje</string>
     <string name="roselia">Roselia</string>
     <string name="brock">Rocko</string>
     <string name="farfetchd">Porenta</string>
@@ -97,6 +105,7 @@
     <string name="azelf">Tobuz</string>
     <string name="bellsprout">Knofensa</string>
     <string name="pincurchin">Britzigel</string>
+    <string name="houndour">Hundemon</string>
     <string name="roserade">Roserade</string>
     <string name="electrode">Lektroball</string>
     <string name="potion">Trank</string>
@@ -109,12 +118,14 @@
     <string name="purrloin">Felilou</string>
     <string name="clefable">Pixi</string>
     <string name="skarmory">Panzaeron</string>
+    <string name="donphan">Donphan</string>
     <string name="pidgey">Taubsi</string>
     <string name="articuno">Arktos</string>
     <string name="magmar">Magmar</string>
     <string name="mawile">Flunkifer</string>
     <string name="weepinbell">Ultigaria</string>
     <string name="stonjourner">Humanolith</string>
+    <string name="tyranitar">Despotar</string>
     <string name="snover">Shnebedeck</string>
     <string name="aerodactyl">Aerodactyl</string>
     <string name="gyarados_ex">Garados EX</string>
@@ -135,6 +146,7 @@
     <string name="grimer">Sleima</string>
     <string name="nosepass">Nasgnet</string>
     <string name="parasect">Parasect</string>
+    <string name="hoothoot">Hoothoot</string>
     <string name="bulbasaur">Bisasam</string>
     <string name="kabutops">Kabutops</string>
     <string name="seaking">Golking</string>
@@ -145,6 +157,7 @@
     <string name="koffing">Smogmog</string>
     <string name="grotle">Chelcarain</string>
     <string name="rattata">Rattfratz</string>
+    <string name="pupitar">Pupitar</string>
     <string name="poke_ball">Pokeball</string>
     <string name="prinplup">Pliprin</string>
     <string name="helix_fossil">Helix Fossil</string>
@@ -165,6 +178,7 @@
     <string name="moltres_ex">Lavados EX</string>
     <string name="druddigon">Shardrago</string>
     <string name="chimchar">Panflam</string>
+    <string name="origin_forme_dialga">Ur Dialga</string>
     <string name="burmy">Burmy</string>
     <string name="tynamo">Zapplardin</string>
     <string name="goldeen">Goldini</string>
@@ -172,6 +186,7 @@
     <string name="floatzel">Bojelin</string>
     <string name="machamp">Machomei</string>
     <string name="snom">Snomnom</string>
+    <string name="phanpy">Phanpy</string>
     <string name="cottonee">Waumboll</string>
     <string name="mesprit">Vesprit</string>
     <string name="mightyena">Magnayen</string>
@@ -195,6 +210,7 @@
     <string name="electabuzz">Elektek</string>
     <string name="magnezone">Magnezone</string>
     <string name="volcarona">Ramoth</string>
+    <string name="meditite">Meditie</string>
     <string name="abra">Abra</string>
     <string name="psyduck">Enton</string>
     <string name="alakazam">Simsala</string>
@@ -202,14 +218,17 @@
     <string name="cubone">Tragosso</string>
     <string name="pidgeot_ex">Tauboss EX</string>
     <string name="meowth">Mauzi</string>
+    <string name="garchomp_ex">Knakrack Ex</string>
     <string name="cranidos">Koknodon</string>
     <string name="pinsir">Pinsir</string>
     <string name="pikachu_ex">Pikachu EX</string>
     <string name="purugly">Shnurgarst</string>
     <string name="mamoswine">Mamutel</string>
     <string name="rotom">Rotom</string>
+    <string name="marill">Marill</string>
     <string name="larvesta">Ignivor</string>
     <string name="lickilicky_ex">Schlurpleck EX</string>
+    <string name="medicham">Meditalis</string>
     <string name="galvantula">Voltula</string>
     <string name="flareon">Flamara</string>
     <string name="eevee">Evoli</string>
@@ -222,17 +241,21 @@
     <string name="lilligant">Dressella</string>
     <string name="volkner">Volkner</string>
     <string name="golbat">Golbat</string>
+    <string name="snorunt">Schneppke</string>
     <string name="jolteon">Blitza</string>
     <string name="marowak">Knogga</string>
+    <string name="whiscash">Welsar</string>
     <string name="manaphy">Manaphy</string>
     <string name="blue">Blau</string>
     <string name="pokemon_flute">Pokemon-Flöte</string>
     <string name="dusknoir">Zwirrfinst</string>
+    <string name="azumarill">Azumarill</string>
     <string name="pidgeot">Tauboss</string>
     <string name="combee">Wadribi</string>
     <string name="nidorina">Nidorina</string>
     <string name="froakie">Froxy</string>
     <string name="omanyte">Amoroso</string>
+    <string name="celestic_town_elder">Älteste von Elysis</string>
     <string name="glameow">Charmian</string>
     <string name="turtwig">Chelast</string>
     <string name="vulpix">Vulpix</string>
@@ -248,8 +271,10 @@
     <string name="poliwag">Quapsel</string>
     <string name="venomoth">Omot</string>
     <string name="salandit">Molunk</string>
+    <string name="larvitar">Larvitar</string>
     <string name="kingler">Kingler</string>
     <string name="gabite">Knarksel</string>
+    <string name="origin_forme_palkia">Ur Palkia</string>
     <string name="kabuto">Kabuto</string>
     <string name="vespiquen">Honweisel</string>
     <string name="mienshao">Wie-Shu</string>
@@ -259,6 +284,7 @@
     <string name="clefairy">Piepi</string>
     <string name="tangela">Tangela</string>
     <string name="arcanine_ex">Arkani EX</string>
+    <string name="barboach">Schmerbe</string>
     <string name="slowbro">Lahmus</string>
     <string name="exeggutor_ex">Kokowei EX</string>
     <string name="rampardos">Rameidon</string>
@@ -273,6 +299,7 @@
     <string name="charizard_ex">Glurak EX</string>
     <string name="nidorino">Nidorino</string>
     <string name="probopass">Voluminas</string>
+    <string name="electrike">Fritzelblitz</string>
     <string name="beheeyem">Megalon</string>
     <string name="dubwool">Zwollock</string>
     <string name="ponyta">Ponita</string>
@@ -311,13 +338,16 @@
     <string name="leaf">Leaf</string>
     <string name="exeggutor">Kokowei</string>
     <string name="sandshrew">Sandan</string>
+    <string name="glaceon_ex">Glaziola Ex</string>
     <string name="glaceon">Glaciola</string>
     <string name="ivysaur">Bisaknosp</string>
     <string name="gallade_ex">Galagladi EX</string>
     <string name="carnivine">Venuflibis</string>
     <string name="tentacool">Tentacha</string>
+    <string name="irida">Perla</string>
     <string name="honchkrow">Kramshef</string>
     <string name="bellossom">Blubella</string>
+    <string name="mothim">Motherpel</string>
     <string name="fan_rotom">Wirbel-Rotom</string>
     <string name="hippowdon">Hippoterus</string>
     <string name="infernape_ex">Panferno EX</string>
@@ -340,11 +370,13 @@
     <string name="porygon_z">Porygon-Z</string>
     <string name="meltan">Meltan</string>
     <string name="gengar_ex">Bengar EX</string>
+    <string name="heracross">Skaraborn</string>
     <string name="budding_expeditioner">Abenteurer-Neuling</string>
     <string name="servine">Efoserp</string>
     <string name="voltorb">Voltoball</string>
     <string name="heatran">Heatran</string>
     <string name="golduck">Entoron</string>
+    <string name="crobat">Iksbat</string>
     <string name="kangaskhan">Kangamer</string>
     <string name="shinx">Sheinux</string>
     <string name="ekans">Rettan</string>
@@ -354,7 +386,9 @@
     <string name="haunter">Apollo</string>
     <string name="abomasnow">Rexblisar</string>
     <string name="machamp_ex">Machomei EX</string>
+    <string name="cherubi">Kinoso</string>
     <string name="ambipom">Ambidiffel</string>
+    <string name="barry">Berry</string>
     <string name="serperior">Serpiroyal</string>
     <string name="bibarel">Bidifas</string>
     <string name="arbok">Arbok</string>
@@ -365,6 +399,7 @@
     <string name="jigglypuff">Pummeluff</string>
     <string name="heatmor">Furnifraß</string>
     <string name="gloom">Duflor</string>
+    <string name="leafeon_ex">Folipurba Ex</string>
     <string name="poliwhirl">Quaputzi</string>
     <string name="muk">Sleimok</string>
     <string name="pyukumuku">Gufa</string>
@@ -385,6 +420,7 @@
     <string name="floette">Floette</string>
     <string name="erika">Erika</string>
     <string name="tangrowth">Tangela</string>
+    <string name="sudowoodo">Mogelbaum</string>
     <string name="swirlix">Flauschling</string>
     <string name="diglett">Digda</string>
     <string name="rapidash">Gallopa</string>
@@ -397,6 +433,7 @@
     <string name="dialga_ex">Dialga EX</string>
     <string name="shiinotic">Lamellux</string>
     <string name="giant_cape">Riesige Robe</string>
+    <string name="manectric">Voltenso</string>
     <string name="lumineon">Lumineon</string>
     <string name="seadra">Seemon</string>
     <string name="wooloo">Wolly</string>
@@ -410,6 +447,7 @@
     <string name="starmie_ex">Starmie EX</string>
     <string name="lum_berry">Prunusbeere</string>
     <string name="dragonair">Dragonir</string>
+    <string name="cresselia_ex">Cresselia Ex</string>
     <string name="tentacruel">Tentoxa</string>
     <string name="rhyperior">Rihornior</string>
     <string name="morelull">Bubungus</string>
@@ -426,6 +464,10 @@
     <string name="old_amber">Altbernstein</string>
     <string name="seel">Jurob</string>
     <string name="magmortar">Magmar</string>
+    <string name="booster_arceus">Arceus Booster</string>
     <string name="set_title">Pokemon TCGP Einstellungen</string>
     <string name="machop">Machollo</string>
+    <string name="cherrim">Kigugi</string>
+    <string name="arceus_ex">Arceus Ex</string>
+    <string name="pack_A2a">Licht des Triumphs</string>
 </resources>

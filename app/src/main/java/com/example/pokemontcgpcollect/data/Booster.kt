@@ -54,7 +54,15 @@ class Booster {
                 totalCards = 100,
                 collectedCards = 0,
                 probabilityGodPack = 0.05
-            )
+            ),
+            R.string.booster_arceus to BoosterEntry(
+                BoosterId = 6,
+                NameId = R.string.booster_arceus,
+                DrawId = R.drawable.a2a_071_arceus_ex,
+                totalCards = 100,
+                collectedCards = 0,
+                probabilityGodPack = 0.05
+            ),
         )
     }
 }

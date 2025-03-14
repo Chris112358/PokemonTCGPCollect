@@ -2206,7 +2206,7 @@ class Dex {
 
             )
     }
-    fun loadPart2(): List<DexEntry> {
+    private fun loadPart2(): List<DexEntry> {
         return listOf(
 
             DexEntry(
@@ -4411,7 +4411,7 @@ class Dex {
 
             )
     }
-    fun loadPart3(): List<DexEntry> {
+    private fun loadPart3(): List<DexEntry> {
         return listOf(
 
             DexEntry(
@@ -6395,6 +6395,1067 @@ class Dex {
             ),
 
             DexEntry(
+                cardId = 1005001,
+                stringResourceID = R.string.heracross,
+                imageResourceId = R.drawable.a2a_001_heracross,
+                dexNumbers = listOf(1),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005002,
+                stringResourceID = R.string.burmy,
+                imageResourceId = R.drawable.a2a_002_burmy,
+                dexNumbers = listOf(2),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005003,
+                stringResourceID = R.string.mothim,
+                imageResourceId = R.drawable.a2a_003_mothim,
+                dexNumbers = listOf(3),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005004,
+                stringResourceID = R.string.combee,
+                imageResourceId = R.drawable.a2a_004_combee,
+                dexNumbers = listOf(4),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005005,
+                stringResourceID = R.string.vespiquen,
+                imageResourceId = R.drawable.a2a_005_vespiquen,
+                dexNumbers = listOf(5),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005006,
+                stringResourceID = R.string.cherubi,
+                imageResourceId = R.drawable.a2a_006_cherubi,
+                dexNumbers = listOf(6),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005007,
+                stringResourceID = R.string.cherrim,
+                imageResourceId = R.drawable.a2a_007_cherrim,
+                dexNumbers = listOf(7),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005008,
+                stringResourceID = R.string.cherrim,
+                imageResourceId = R.drawable.a2a_008_cherrim,
+                dexNumbers = listOf(8),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005009,
+                stringResourceID = R.string.carnivine,
+                imageResourceId = R.drawable.a2a_009_carnivine,
+                dexNumbers = listOf(9),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005010,
+                stringResourceID = R.string.leafeon_ex,
+                imageResourceId = R.drawable.a2a_010_leafeon_ex,
+                dexNumbers = listOf(10),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 4,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.3332, 1.3328), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005011,
+                stringResourceID = R.string.houndour,
+                imageResourceId = R.drawable.a2a_011_houndour,
+                dexNumbers = listOf(11),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005012,
+                stringResourceID = R.string.houndoom,
+                imageResourceId = R.drawable.a2a_012_houndoom,
+                dexNumbers = listOf(12),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005013,
+                stringResourceID = R.string.heatran,
+                imageResourceId = R.drawable.a2a_013_heatran,
+                dexNumbers = listOf(13),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005014,
+                stringResourceID = R.string.marill,
+                imageResourceId = R.drawable.a2a_014_marill,
+                dexNumbers = listOf(14),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005015,
+                stringResourceID = R.string.azumarill,
+                imageResourceId = R.drawable.a2a_015_azumarill,
+                dexNumbers = listOf(15),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005016,
+                stringResourceID = R.string.barboach,
+                imageResourceId = R.drawable.a2a_016_barboach,
+                dexNumbers = listOf(16),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005017,
+                stringResourceID = R.string.whiscash,
+                imageResourceId = R.drawable.a2a_017_whiscash,
+                dexNumbers = listOf(17),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005018,
+                stringResourceID = R.string.snorunt,
+                imageResourceId = R.drawable.a2a_018_snorunt,
+                dexNumbers = listOf(18),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005019,
+                stringResourceID = R.string.froslass,
+                imageResourceId = R.drawable.a2a_019_froslass,
+                dexNumbers = listOf(19),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005020,
+                stringResourceID = R.string.snover,
+                imageResourceId = R.drawable.a2a_020_snover,
+                dexNumbers = listOf(20),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            )
+    }
+    private fun loadPart4(): List<DexEntry> {
+        return listOf(
+
+            DexEntry(
+                cardId = 1005021,
+                stringResourceID = R.string.abomasnow,
+                imageResourceId = R.drawable.a2a_021_abomasnow,
+                dexNumbers = listOf(21),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005022,
+                stringResourceID = R.string.glaceon_ex,
+                imageResourceId = R.drawable.a2a_022_glaceon_ex,
+                dexNumbers = listOf(22),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 4,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.3332, 1.3328), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005023,
+                stringResourceID = R.string.origin_forme_palkia,
+                imageResourceId = R.drawable.a2a_023_origin_forme_palkia,
+                dexNumbers = listOf(23),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005024,
+                stringResourceID = R.string.phione,
+                imageResourceId = R.drawable.a2a_024_phione,
+                dexNumbers = listOf(24),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005025,
+                stringResourceID = R.string.pikachu,
+                imageResourceId = R.drawable.a2a_025_pikachu,
+                dexNumbers = listOf(25),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005026,
+                stringResourceID = R.string.raichu,
+                imageResourceId = R.drawable.a2a_026_raichu,
+                dexNumbers = listOf(26),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005027,
+                stringResourceID = R.string.electrike,
+                imageResourceId = R.drawable.a2a_027_electrike,
+                dexNumbers = listOf(27),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005028,
+                stringResourceID = R.string.manectric,
+                imageResourceId = R.drawable.a2a_028_manectric,
+                dexNumbers = listOf(28),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005029,
+                stringResourceID = R.string.clefairy,
+                imageResourceId = R.drawable.a2a_029_clefairy,
+                dexNumbers = listOf(29),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005030,
+                stringResourceID = R.string.clefable,
+                imageResourceId = R.drawable.a2a_030_clefable,
+                dexNumbers = listOf(30),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005031,
+                stringResourceID = R.string.gastly,
+                imageResourceId = R.drawable.a2a_031_gastly,
+                dexNumbers = listOf(31),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005032,
+                stringResourceID = R.string.haunter,
+                imageResourceId = R.drawable.a2a_032_haunter,
+                dexNumbers = listOf(32),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005033,
+                stringResourceID = R.string.gengar,
+                imageResourceId = R.drawable.a2a_033_gengar,
+                dexNumbers = listOf(33),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005034,
+                stringResourceID = R.string.unown,
+                imageResourceId = R.drawable.a2a_034_unown,
+                dexNumbers = listOf(34),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005035,
+                stringResourceID = R.string.rotom,
+                imageResourceId = R.drawable.a2a_035_rotom,
+                dexNumbers = listOf(35),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005036,
+                stringResourceID = R.string.sudowoodo,
+                imageResourceId = R.drawable.a2a_036_sudowoodo,
+                dexNumbers = listOf(36),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005037,
+                stringResourceID = R.string.phanpy,
+                imageResourceId = R.drawable.a2a_037_phanpy,
+                dexNumbers = listOf(37),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005038,
+                stringResourceID = R.string.donphan,
+                imageResourceId = R.drawable.a2a_038_donphan,
+                dexNumbers = listOf(38),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005039,
+                stringResourceID = R.string.larvitar,
+                imageResourceId = R.drawable.a2a_039_larvitar,
+                dexNumbers = listOf(39),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005040,
+                stringResourceID = R.string.pupitar,
+                imageResourceId = R.drawable.a2a_040_pupitar,
+                dexNumbers = listOf(40),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005041,
+                stringResourceID = R.string.tyranitar,
+                imageResourceId = R.drawable.a2a_041_tyranitar,
+                dexNumbers = listOf(41),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005042,
+                stringResourceID = R.string.nosepass,
+                imageResourceId = R.drawable.a2a_042_nosepass,
+                dexNumbers = listOf(42),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005043,
+                stringResourceID = R.string.meditite,
+                imageResourceId = R.drawable.a2a_043_meditite,
+                dexNumbers = listOf(43),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005044,
+                stringResourceID = R.string.medicham,
+                imageResourceId = R.drawable.a2a_044_medicham,
+                dexNumbers = listOf(44),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005045,
+                stringResourceID = R.string.gible,
+                imageResourceId = R.drawable.a2a_045_gible,
+                dexNumbers = listOf(45),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005046,
+                stringResourceID = R.string.gabite,
+                imageResourceId = R.drawable.a2a_046_gabite,
+                dexNumbers = listOf(46),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005047,
+                stringResourceID = R.string.garchomp_ex,
+                imageResourceId = R.drawable.a2a_047_garchomp_ex,
+                dexNumbers = listOf(47),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 4,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.3332, 1.3328), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005048,
+                stringResourceID = R.string.zubat,
+                imageResourceId = R.drawable.a2a_048_zubat,
+                dexNumbers = listOf(48),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005049,
+                stringResourceID = R.string.golbat,
+                imageResourceId = R.drawable.a2a_049_golbat,
+                dexNumbers = listOf(49),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005050,
+                stringResourceID = R.string.crobat,
+                imageResourceId = R.drawable.a2a_050_crobat,
+                dexNumbers = listOf(50),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005051,
+                stringResourceID = R.string.croagunk,
+                imageResourceId = R.drawable.a2a_051_croagunk,
+                dexNumbers = listOf(51),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005052,
+                stringResourceID = R.string.toxicroak,
+                imageResourceId = R.drawable.a2a_052_toxicroak,
+                dexNumbers = listOf(52),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005053,
+                stringResourceID = R.string.magnemite,
+                imageResourceId = R.drawable.a2a_053_magnemite,
+                dexNumbers = listOf(53),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005054,
+                stringResourceID = R.string.magneton,
+                imageResourceId = R.drawable.a2a_054_magneton,
+                dexNumbers = listOf(54),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005055,
+                stringResourceID = R.string.magnezone,
+                imageResourceId = R.drawable.a2a_055_magnezone,
+                dexNumbers = listOf(55),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005056,
+                stringResourceID = R.string.mawile,
+                imageResourceId = R.drawable.a2a_056_mawile,
+                dexNumbers = listOf(56),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005057,
+                stringResourceID = R.string.probopass_ex,
+                imageResourceId = R.drawable.a2a_057_probopass_ex,
+                dexNumbers = listOf(57),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 4,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.3332, 1.3328), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005058,
+                stringResourceID = R.string.bronzor,
+                imageResourceId = R.drawable.a2a_058_bronzor,
+                dexNumbers = listOf(58),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005059,
+                stringResourceID = R.string.bronzong,
+                imageResourceId = R.drawable.a2a_059_bronzong,
+                dexNumbers = listOf(59),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005060,
+                stringResourceID = R.string.origin_forme_dialga,
+                imageResourceId = R.drawable.a2a_060_origin_forme_dialga,
+                dexNumbers = listOf(60),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005061,
+                stringResourceID = R.string.giratina,
+                imageResourceId = R.drawable.a2a_061_giratina,
+                dexNumbers = listOf(61),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005062,
+                stringResourceID = R.string.eevee,
+                imageResourceId = R.drawable.a2a_062_eevee,
+                dexNumbers = listOf(62),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005063,
+                stringResourceID = R.string.snorlax,
+                imageResourceId = R.drawable.a2a_063_snorlax,
+                dexNumbers = listOf(63),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005064,
+                stringResourceID = R.string.hoothoot,
+                imageResourceId = R.drawable.a2a_064_hoothoot,
+                dexNumbers = listOf(64),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005065,
+                stringResourceID = R.string.noctowl,
+                imageResourceId = R.drawable.a2a_065_noctowl,
+                dexNumbers = listOf(65),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005066,
+                stringResourceID = R.string.starly,
+                imageResourceId = R.drawable.a2a_066_starly,
+                dexNumbers = listOf(66),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005067,
+                stringResourceID = R.string.staravia,
+                imageResourceId = R.drawable.a2a_067_staravia,
+                dexNumbers = listOf(67),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 1,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(3.225806, 3.225806, 3.225806, 0.0, 0.0), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005068,
+                stringResourceID = R.string.staraptor,
+                imageResourceId = R.drawable.a2a_068_staraptor,
+                dexNumbers = listOf(68),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005069,
+                stringResourceID = R.string.shaymin,
+                imageResourceId = R.drawable.a2a_069_shaymin,
+                dexNumbers = listOf(69),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005070,
+                stringResourceID = R.string.arceus,
+                imageResourceId = R.drawable.a2a_070_arceus,
+                dexNumbers = listOf(70),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 3,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.384615, 1.538462), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005071,
+                stringResourceID = R.string.arceus_ex,
+                imageResourceId = R.drawable.a2a_071_arceus_ex,
+                dexNumbers = listOf(71),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 4,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.3332, 1.3328), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005072,
+                stringResourceID = R.string.irida,
+                imageResourceId = R.drawable.a2a_072_irida,
+                dexNumbers = listOf(72),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005073,
+                stringResourceID = R.string.celestic_town_elder,
+                imageResourceId = R.drawable.a2a_073_celestic_town_elder,
+                dexNumbers = listOf(73),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005074,
+                stringResourceID = R.string.barry,
+                imageResourceId = R.drawable.a2a_074_barry,
+                dexNumbers = listOf(74),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005075,
+                stringResourceID = R.string.adaman,
+                imageResourceId = R.drawable.a2a_075_adaman,
+                dexNumbers = listOf(75),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 2,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 3.461538, 2.307692), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
+                cardId = 1005076,
+                stringResourceID = R.string.houndoom,
+                imageResourceId = R.drawable.a2a_076_houndoom,
+                dexNumbers = listOf(76),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 11,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.428667, 1.714667), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005077,
+                stringResourceID = R.string.marill,
+                imageResourceId = R.drawable.a2a_077_marill,
+                dexNumbers = listOf(77),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 11,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.428667, 1.714667), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005078,
+                stringResourceID = R.string.unown,
+                imageResourceId = R.drawable.a2a_078_unown,
+                dexNumbers = listOf(78),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 11,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.428667, 1.714667), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005079,
+                stringResourceID = R.string.sudowoodo,
+                imageResourceId = R.drawable.a2a_079_sudowoodo,
+                dexNumbers = listOf(79),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 11,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.428667, 1.714667), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005080,
+                stringResourceID = R.string.magnemite,
+                imageResourceId = R.drawable.a2a_080_magnemite,
+                dexNumbers = listOf(80),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 11,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.428667, 1.714667), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005081,
+                stringResourceID = R.string.shaymin,
+                imageResourceId = R.drawable.a2a_081_shaymin,
+                dexNumbers = listOf(81),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 11,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.428667, 1.714667), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005082,
+                stringResourceID = R.string.leafeon_ex,
+                imageResourceId = R.drawable.a2a_082_leafeon_ex,
+                dexNumbers = listOf(82),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005083,
+                stringResourceID = R.string.glaceon_ex,
+                imageResourceId = R.drawable.a2a_083_glaceon_ex,
+                dexNumbers = listOf(83),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005084,
+                stringResourceID = R.string.garchomp_ex,
+                imageResourceId = R.drawable.a2a_084_garchomp_ex,
+                dexNumbers = listOf(84),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005085,
+                stringResourceID = R.string.probopass_ex,
+                imageResourceId = R.drawable.a2a_085_probopass_ex,
+                dexNumbers = listOf(85),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005086,
+                stringResourceID = R.string.arceus_ex,
+                imageResourceId = R.drawable.a2a_086_arceus_ex,
+                dexNumbers = listOf(86),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005087,
+                stringResourceID = R.string.irida,
+                imageResourceId = R.drawable.a2a_087_irida,
+                dexNumbers = listOf(87),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005088,
+                stringResourceID = R.string.celestic_town_elder,
+                imageResourceId = R.drawable.a2a_088_celestic_town_elder,
+                dexNumbers = listOf(88),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005089,
+                stringResourceID = R.string.barry,
+                imageResourceId = R.drawable.a2a_089_barry,
+                dexNumbers = listOf(89),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005090,
+                stringResourceID = R.string.adaman,
+                imageResourceId = R.drawable.a2a_090_adaman,
+                dexNumbers = listOf(90),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005091,
+                stringResourceID = R.string.leafeon_ex,
+                imageResourceId = R.drawable.a2a_091_leafeon_ex,
+                dexNumbers = listOf(91),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005092,
+                stringResourceID = R.string.glaceon_ex,
+                imageResourceId = R.drawable.a2a_092_glaceon_ex,
+                dexNumbers = listOf(92),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005093,
+                stringResourceID = R.string.garchomp_ex,
+                imageResourceId = R.drawable.a2a_093_garchomp_ex,
+                dexNumbers = listOf(93),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005094,
+                stringResourceID = R.string.probopass_ex,
+                imageResourceId = R.drawable.a2a_094_probopass_ex,
+                dexNumbers = listOf(94),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 12,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.038462, 0.153846), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005095,
+                stringResourceID = R.string.arceus_ex,
+                imageResourceId = R.drawable.a2a_095_arceus_ex,
+                dexNumbers = listOf(95),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 13,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.222, 0.888), pullRateGodPack = listOf(4.761905, 4.761905, 4.761905, 4.761905, 4.761905))),
+            ),
+
+            DexEntry(
+                cardId = 1005096,
+                stringResourceID = R.string.arceus_ex,
+                imageResourceId = R.drawable.a2a_096_arceus_ex,
+                dexNumbers = listOf(96),
+                packIds = listOf(R.string.pack_A2a),
+                boosterId = listOf(R.string.booster_arceus),
+                rarity = 20,
+                pullRates = mapOf(R.string.booster_arceus to PullRate(boosterId = R.string.booster_arceus, pullRate = listOf(0.0, 0.0, 0.0, 0.04, 0.16), pullRateGodPack = listOf(0.0, 0.0, 0.0, 0.0, 0.0))),
+            ),
+
+            DexEntry(
                 cardId = 1004001,
                 stringResourceID = R.string.potion,
                 imageResourceId = R.drawable.p_a_001_potion,
@@ -6614,11 +7675,6 @@ class Dex {
                 pullRates = mapOf(),
             ),
 
-            )
-    }
-    fun loadPart4(): List<DexEntry> {
-        return listOf(
-
             DexEntry(
                 cardId = 1004021,
                 stringResourceID = R.string.onix,
@@ -6756,6 +7812,182 @@ class Dex {
                 stringResourceID = R.string.squirtle,
                 imageResourceId = R.drawable.p_a_033_squirtle,
                 dexNumbers = listOf(33),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004034,
+                stringResourceID = R.string.piplup,
+                imageResourceId = R.drawable.p_a_034_piplup,
+                dexNumbers = listOf(34),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004035,
+                stringResourceID = R.string.turtwig,
+                imageResourceId = R.drawable.p_a_035_turtwig,
+                dexNumbers = listOf(35),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004036,
+                stringResourceID = R.string.electivire,
+                imageResourceId = R.drawable.p_a_036_electivire,
+                dexNumbers = listOf(36),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004037,
+                stringResourceID = R.string.cresselia_ex,
+                imageResourceId = R.drawable.p_a_037_cresselia_ex,
+                dexNumbers = listOf(37),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004038,
+                stringResourceID = R.string.misdreavus,
+                imageResourceId = R.drawable.p_a_038_misdreavus,
+                dexNumbers = listOf(38),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004039,
+                stringResourceID = R.string.skarmory,
+                imageResourceId = R.drawable.p_a_039_skarmory,
+                dexNumbers = listOf(39),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004040,
+                stringResourceID = R.string.chimchar,
+                imageResourceId = R.drawable.p_a_040_chimchar,
+                dexNumbers = listOf(40),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004041,
+                stringResourceID = R.string.togepi,
+                imageResourceId = R.drawable.p_a_041_togepi,
+                dexNumbers = listOf(41),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004042,
+                stringResourceID = R.string.darkrai_ex,
+                imageResourceId = R.drawable.p_a_042_darkrai_ex,
+                dexNumbers = listOf(42),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004043,
+                stringResourceID = R.string.cherrim,
+                imageResourceId = R.drawable.p_a_043_cherrim,
+                dexNumbers = listOf(43),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004044,
+                stringResourceID = R.string.raichu,
+                imageResourceId = R.drawable.p_a_044_raichu,
+                dexNumbers = listOf(44),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004045,
+                stringResourceID = R.string.nosepass,
+                imageResourceId = R.drawable.p_a_045_nosepass,
+                dexNumbers = listOf(45),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004046,
+                stringResourceID = R.string.gible,
+                imageResourceId = R.drawable.p_a_046_gible,
+                dexNumbers = listOf(46),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004047,
+                stringResourceID = R.string.staraptor,
+                imageResourceId = R.drawable.p_a_047_staraptor,
+                dexNumbers = listOf(47),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004048,
+                stringResourceID = R.string.manaphy,
+                imageResourceId = R.drawable.p_a_048_manaphy,
+                dexNumbers = listOf(48),
+                packIds = listOf(R.string.pack_P_A),
+                boosterId = listOf(),
+                rarity = 0,
+                pullRates = mapOf(),
+            ),
+
+            DexEntry(
+                cardId = 1004049,
+                stringResourceID = R.string.snorlax,
+                imageResourceId = R.drawable.p_a_049_snorlax,
+                dexNumbers = listOf(49),
                 packIds = listOf(R.string.pack_P_A),
                 boosterId = listOf(),
                 rarity = 0,

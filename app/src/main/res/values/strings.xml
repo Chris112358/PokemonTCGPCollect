@@ -19,9 +19,11 @@
     <string name="booster_mew">Mew Booster</string>
     <string name="booster_mewtwo">Mewtwo Booster</string>
     <string name="booster_dialga">Dialga Booster</string>
-    <string name="booster_palkia">Booster Palkia</string>
+    <string name="booster_palkia">Palkia Booster</string>
+    <string name="booster_arceus">Arceus Booster</string>
     <string name="set_title">"Pokemon TCGP Settings "</string>
     <string name="newCardPercent">"Probability of new Card: "</string>
+    <string name="pack_A2a">Triumphant Light</string>
 
 
 </resources>

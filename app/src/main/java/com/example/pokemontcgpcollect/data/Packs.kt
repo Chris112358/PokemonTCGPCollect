@@ -44,6 +44,17 @@ class Packs {
                 collectedStar = 0
             ),
             PackEntry(
+                id = 2,
+                packId = R.string.pack_A2a,
+                booster = listOf(
+                    boosterEntries.getValue(R.string.booster_arceus)
+                ),
+                totalDiamond = 68,
+                totalStar = 17,
+                collectedDiamond = 0,
+                collectedStar = 0
+            ),
+            PackEntry(
                 id = 4,
                 packId = R.string.pack_P_A,
                 booster = listOf(),
