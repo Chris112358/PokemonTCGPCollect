@@ -55,6 +55,17 @@ class Packs {
                 collectedStar = 0
             ),
             PackEntry(
+                id = 5,
+                packId = R.string.pack_A2b,
+                booster = listOf(
+                    boosterEntries.getValue(R.string.booster_shiny_charizard)
+                ),
+                totalDiamond = 68,
+                totalStar = 17,
+                collectedDiamond = 0,
+                collectedStar = 0
+            ),
+            PackEntry(
                 id = 4,
                 packId = R.string.pack_P_A,
                 booster = listOf(),

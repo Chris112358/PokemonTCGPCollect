@@ -63,6 +63,14 @@ class Booster {
                 collectedCards = 0,
                 probabilityGodPack = 0.05
             ),
+            R.string.booster_shiny_charizard to BoosterEntry(
+                BoosterId = 6,
+                NameId = R.string.booster_shiny_charizard,
+                DrawId = R.drawable.a2b_108_charizard_ex,
+                totalCards = 100,
+                collectedCards = 0,
+                probabilityGodPack = 0.05
+            ),
         )
     }
 }

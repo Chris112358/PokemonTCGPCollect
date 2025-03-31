@@ -21,9 +21,12 @@
     <string name="booster_dialga">Dialga Booster</string>
     <string name="booster_palkia">Palkia Booster</string>
     <string name="booster_arceus">Arceus Booster</string>
+    <string name="booster_shiny_charizard">S-Charizard Booster</string>
+
     <string name="set_title">"Pokemon TCGP Settings "</string>
     <string name="newCardPercent">"Probability of new Card: "</string>
     <string name="pack_A2a">Triumphant Light</string>
+    <string name="pack_A2b">Shining Revelry</string>
 
 
 </resources>
